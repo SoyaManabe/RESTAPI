@@ -45,7 +45,8 @@ class Item(Resource):
         item = next(filter(lambda x: x['name'] == name, items), None)
         if item is None:
             item = {'name':name, 'price': data['price']}
-            items.append(item)
+            items.append(ite
+            m)
         else:
             item.update(data)
         return item
